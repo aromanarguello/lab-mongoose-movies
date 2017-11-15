@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 
+require("./config/celebrity-setup");
 
 const app = express();
 
@@ -27,6 +28,10 @@ app.use(layouts);
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const myCelebRouter = require("./routes/celebrity");
+app.use(myCelebRouter);
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

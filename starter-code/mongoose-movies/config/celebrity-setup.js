@@ -4,7 +4,7 @@ mongoose.Promise = Promise;
 
 mongoose.connect("mongodb://localhost/celebrities", { useMongoClient: true })
   .then(() => {
-    console.log("Mongoose is connected!");
+    console.log("Mongoose is connected!!!!!!!!");
   })
   .catch((err) => {
     console.log("Mongoose connection FAILED!!! 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨");

@@ -1,4 +1,4 @@
-require("../config/celebrity-setup")
+require("../config/celebrity-setup");
 const CelebrityModel = require("../models/celebrity");
 
 const celebSchema = [
